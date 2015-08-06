@@ -51,9 +51,21 @@
     <!-- SUMOME -->
     <script src="//load.sumome.com/" data-sumo-site-id="02b115b49c5caecf58452f25f6aa88c991544509adf4adda9ed3155b20855465" async="async"></script>
 
+    <!-- Meta Tags Wufoo -->
+    <meta charset="utf-8">
+    <meta name="generator" content="Wufoo">
+    <meta name="robots" content="index, follow">
+
+    <!-- CSS Wufoo-->
+    <link href="css/structure.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+
+    <!-- JavaScript Wufoo-->
+    <script src="scripts/wufoo.js"></script>
+
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" id="public" class="index">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -161,27 +173,43 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form action="https://projetosupernova.us11.list-manage.com/subscribe/post?u=a3f43fe7363fdd12163e01e69&amp;id=197a016f54" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                  <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+                  action="https://projetosupernova.wufoo.com/forms/zu8yf491ptnk8q/#public" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3">
+
+                                <!--NOME-->
                                 <div class="form-group">
-                                    <input type="text" name = "FNAME" class="form-control" placeholder="Nome *" id="name" required="" data-validation-required-message="Por favor, preencha seu Nome.">
+                                    <input id="Field4" name="Field4" type="text" tabindex="1" name = "FNAME" class="form-control" placeholder="Nome *" id="name" required="" data-validation-required-message="Por favor, preencha seu Nome.">
                                     <p class="help-block text-danger"></p>
                                 </div>
+
+                                <!--EMAIL-->
                                 <div class="form-group">
-                                    <input type="email" name="EMAIL" class="form-control" placeholder="E-mail *" id="email" required="" data-validation-required-message="Por favor, preencha seu E-mail.">
+                                    <input id="Field7" name="Field7" type="email" tabindex="3" spellcheck="false" class="form-control" placeholder="E-mail *" id="email" required="" data-validation-required-message="Por favor, preencha seu E-mail.">
                                     <p class="help-block text-danger"></p>
                                 </div>
+
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                <div style="position: absolute; left: -5000px;"><input type="text" name="b_a3f43fe7363fdd12163e01e69_197a016f54" tabindex="-1" value=""></div>
 
-                                <button type="submit" class="btn btn-xl">Avisar-me</button>
+                                <!--BOTAO-->
+                                <button id="saveForm" name="saveForm" value="Submit" type="submit" class="btn btn-xl">Avisar-me</button>
+
                             </div>
+
+                            <!--Código POST Wufoo-->
+                            <li class="hide">
+                                <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                                <input type="hidden" id="idstamp" name="idstamp" value="1go//10812i3BobQnRWjKD4F5CKeu6OJ3x0ewVv3oSo=" />
+                            </li>
+
                         </div>
+
                     </form>
                 </div>
             </div>
