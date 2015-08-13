@@ -67,10 +67,13 @@ h6 {
 .bg-closing {
     text-align: center;
     color: #fff;
-    background-attachment: fixed;
+
+    background-attachment: scroll;
     background-image: url(../img/closing-bg.jpg);
+
     background-position: center center;
     background-repeat: none;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -131,7 +134,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 20px 40px;
+    padding: 19px 19px; /*! 20px 40px */
     border-color: #fed136;
     border-radius: 3px;
     text-transform: uppercase;
@@ -180,6 +183,12 @@ fieldset[disabled] .btn-xl.active {
 .btn-xl .badge {
     color: #fed136;
     background-color: #fff;
+}
+
+@media(min-width:768px) {
+  .btn-xl {
+      padding: 20px 40px; /*! 20px 40px */
+    }
 }
 
 .navbar-default {
@@ -277,14 +286,18 @@ fieldset[disabled] .btn-xl.active {
 header {
     text-align: center;
     color: #fff;
-    background-attachment: fixed;
+
+    background-attachment: scroll;
     background-image: url(../img/header-bg.jpg);
+
     background-position: center center;
     background-repeat: none;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
 }
 
 header .intro-text {
@@ -336,12 +349,12 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 27px;
     font-size: 22px;
 }
 
@@ -355,10 +368,10 @@ section h2.section-heading {
 
 
 section h3.section-subheading {
-    margin-bottom: 50px;
+    margin-bottom: 33px;
     text-transform: none;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 24px;
+    font-size: 19px;
     font-style: italic;
     font-weight: 400;
 }
@@ -367,6 +380,16 @@ section h3.section-subheading {
     section {
         padding: 150px 0 150px 0;
     }
+
+    section h3.section-subheading {
+      margin-bottom: 50px;
+      text-transform: none;
+      font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 26px;
+      font-style: italic;
+      font-weight: 400;
+    }
+
 }
 
 .service-heading {
@@ -517,6 +540,6 @@ body {
 }
 
 #supernova_logo {
-  height: 180%;
+  height: 40px; /*! 180% */
   margin-top: -6%;
 }
