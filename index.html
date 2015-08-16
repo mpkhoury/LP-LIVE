@@ -147,7 +147,7 @@
                         <a class="page-scroll" href="#services">Quero saber como</a>
                     </li>
                     <li>
-                        <a onclick="document.getElementById('contact').style.display = 'block'" class="page-scroll" href="#contact">Prepare sua aula agora</a>
+                        <a onclick="document.getElementById('contact').style.display = 'block'; $('#form1').validator('validate');" class="page-scroll" href="#contact">Prepare sua aula agora</a>
                     </li>
                 </ul>
             </div>
@@ -212,7 +212,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Reinvente suas aulas com apoio de educadores de todo Brasil</h2>
-                    <a onclick="document.getElementById('contact').style.display = 'block'" href="#contact" class="page-scroll btn btn-xl">Prepare sua aula agora</a>
+                    <a onclick="document.getElementById('contact').style.display = 'block'; $('#form1').validator('validate')" href="#contact" class="page-scroll btn btn-xl">Prepare sua aula agora</a>
                 </div>
             </div>
         </div>
@@ -256,8 +256,7 @@
                                 <div id="success"></div>
 
                                 <!--BOTAO-->
-                                <button id="saveForm" name="saveForm" value="Submit" type="submit" class="btn btn-xl">Avise-me</button>
-
+                                <button id="saveForm" onclick="document.getElementById('Field4').disabled = 'true'; document.getElementById('Field7').disabled = 'true'; this.innerHTML='Contato salvo'; this.disabled=true;" name="saveForm" value="Submit" type="submit" class="btn btn-xl">Avise-me</button>
                             </div>
 
                             <!--Código POST Wufoo-->
