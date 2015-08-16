@@ -414,6 +414,10 @@ section#contact .form-group {
     margin-bottom: 25px;
 }
 
+.form-control {
+    border: 2px solid #CCC;
+}
+
 section#contact .form-group input,
 section#contact .form-group textarea {
     padding: 20px;
